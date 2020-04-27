@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Profit Prediction</title>
+	</head>
+	<body>
+		<h1><div style="text_allign:center"><font color="blue">Profit Prediction From Startup Company</font></div></h1>
+		<hr>
+		</br>
+		<h2><div style="text_allign:center"><font color="Red">Enter the values in the below form</font></div></h2>
+		</br>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-6'>
+					<form method="POST" action="/predict">
+						<div class="form-group">
+							<label for="NewYork"><p class="font-weight-bold">New York</p></label>
+							<input type="text" name="NewYork">
+							<small id="NYHelp" class="form-text text-muted">Enter 1 if state selected is New York else enter 0</small>
+						</div>
+						<div class="form-group">
+                                                       	<label for="California"><p class="font-weight-bold">California</p></label>
+                                                       	<input type="text" name="California">
+                                                       	<small id="CaHelp" class="form-text text-muted">Enter 1 if state selected is California else enter 0</small>
+						</div>
+						<div class="form-group">
+                                                        <label for="Florida"><p class="font-weight-bold">Florida</p></label>
+                                                        <input type="text" name="Florida">
+                                                        <small id="FlHelp" class="form-text text-muted">Enter 1 if state selected is Florida else enter 0</small>
+                                                </div>
+						<div class="form-group">
+                                                        <label for="RnD_Spend"><p class="font-weight-bold">RnD Spend</p></label>
+                                                        <input type="text" name="RnD_Spend">
+                                                        <small id="RnDSpendHelp" class="form-text text-muted">Enter the value for RnD Spend</small>
+                                                </div>
+                                                <div class="form-group">
+                                                       <label for="Admin_Spend"><p class="font-weight-bold">Admin Spend</p></label>
+                                                       <input type="text" name="Admin_Spend">
+						       <small id="AdminSpendHelp" class="form-text text-muted">Enter the value for Admin Spend</small>
+                                                </div>
+                                                <div class="form-group">
+                                                       <label for="Market_Spend"><p class="font-weight-bold">Market Spend</p></label>
+                                                       <input type="text" name="Market_Spend">
+                                                       <small id="MarketSpendHelp" class="form-text text-muted">Enter the value for Market Spend</small>
+                                                </div>
+
+						<input class='btn btn-primary' type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
